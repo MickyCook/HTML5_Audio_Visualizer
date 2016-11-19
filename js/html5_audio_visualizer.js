@@ -41,7 +41,8 @@ Visualizer.prototype = {
             audioInput = document.getElementById('uploadedFile'),
             dropContainer = document.getElementsByTagName("canvas")[0];
         //listen the file upload
-        audioInput.onchange = function() {
+        document.getElementById("btn").onclick = function() {
+            console.log(audioInput.files[0]);
             if (that.audioContext===null) {return;};
 
             //the if statement fixes the file selction cancle, because the onchange will trigger even the file selection been canceled
