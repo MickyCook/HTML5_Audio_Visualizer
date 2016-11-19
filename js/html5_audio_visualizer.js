@@ -40,6 +40,7 @@ Visualizer.prototype = {
         var that = this,
             audioInput = document.getElementById('uploadedFile'),
             dropContainer = document.getElementsByTagName("canvas")[0];
+
         //listen the file upload
         document.getElementById("btn").onclick = function() {
             console.log(audioInput.files[0]);
